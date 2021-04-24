@@ -1,0 +1,88 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=VT323&family=Share+Tech+Mono");
+
+:root
+{
+    --primary-color: #000000;
+    --secondary-color: #39ff14;
+    --tertiary-color: #ffffff;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'VT323', sans-serif;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    text-shadow: 0 0 7.5px rgba(256, 256, 256, 0.55);
+}
+
+header
+{
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header h1
+{
+    font-family: 'Major Mono Display', sans-serif;
+    font-weight: normal;
+    font-size: 48px;
+}
+
+header a
+{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+header nav
+{
+    margin: 10px;
+}
+
+header nav ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a
+{
+    padding: 40px;
+    font-size: 1.5vw;
+
+}
+/*On hover blink the first character*/
+header nav ul li a:hover
+{
+    color: var(--tertiary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+header nav ul li a:hover::before
+{
+    content: '>';
+}
+
+/*Contact Me Section Styling (<footer>)*/
+footer
+{
+
+}

@@ -6,6 +6,7 @@
     --primary-color: #000000;
     --secondary-color: #39ff14;
     --tertiary-color: #ffffff;
+    --quaternary-color: gray;
 }
 
 *
@@ -19,7 +20,7 @@ body
 {
     font-family: 'VT323', sans-serif;
     font-size: 24px;
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     background-color: var(--primary-color);
     background-image: radial-gradient(rgba(0, 150, 0, 0.15), black 120%);
     background-size: cover;
@@ -29,6 +30,7 @@ body
 
 header
 {
+    font-family: 'Major Mono Display', sans-serif;
     padding: 25px;
     display: flex;
     justify-content: space-between;
@@ -88,12 +90,59 @@ header nav ul li a:hover::before
 
 h2
 {
+    font-family: 'Major Mono Display', sans-serif;
     font-weight: 500;
+    color: var(--secondary-color);
     text-shadow: 0 0 7.5px rgba(256, 256, 256, 0.55);
+}
+
+.hero
+{
+    width: 20%;
+    margin: 0 75px;
+}
+
+/*.hero:hover
+{
+    background: url("./assets/images/profile-picture.jpg") no-repeat;
+}
+
+Should change image source with javscript
+*/
+.about
+{
+    line-height: 1.5;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.about p
+{
+    margin: 5px 20px;
+}
+
+.about a
+{
+    color: var(--tertiary-color);
+    border: 1px solid var(--secondary-color);
+    padding: 2px;
+    text-decoration: none;
+}
+
+.about a:hover
+{
+    color: var(--secondary-color);
 }
 
 /*Contact Me Section Styling (<footer>)*/
 footer
 {
 
+}
+
+/* Utility Styles */
+.flex-row
+{
+    display: flex;
 }

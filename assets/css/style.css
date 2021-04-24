@@ -18,9 +18,13 @@
 body
 {
     font-family: 'VT323', sans-serif;
+    font-size: 24px;
     color: var(--secondary-color);
     background-color: var(--primary-color);
-    text-shadow: 0 0 7.5px rgba(256, 256, 256, 0.55);
+    background-image: radial-gradient(rgba(0, 150, 0, 0.15), black 120%);
+    background-size: cover;
+    background-position: 70%;
+    background-attachment: fixed;
 }
 
 header
@@ -33,6 +37,7 @@ header
     position: sticky;
     top: 0;
     z-index: 9999;
+    text-shadow: 0 0 7.5px rgba(256, 256, 256, 0.55);
 }
 
 header h1
@@ -79,6 +84,12 @@ header nav ul li a:hover
 header nav ul li a:hover::before
 {
     content: '>';
+}
+
+h2
+{
+    font-weight: 500;
+    text-shadow: 0 0 7.5px rgba(256, 256, 256, 0.55);
 }
 
 /*Contact Me Section Styling (<footer>)*/

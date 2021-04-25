@@ -375,36 +375,61 @@ h4
 
     header nav ul
     {
-        margin-top: 20px;
         width: 100%;
         justify-content: center;
     }
 
     header nav ul li a
     {
-        font-size: 20px;
-        margin-top: 25px;
+        font-size: 1.5em;
+        padding: 0px 25px;
+        color: var(--tertiary-color);
+    }
+    #toTopButton
+    {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        left: 25px;
+    }
+
+    #toTopButton img
+    {
+        height: 50px;
+        width: 50px;
     }
     .border-content, .border-corners-only
     {
         width: 100%;
-        font-size: 1.5vw;
     }
     .about-content, .images-list, .contact-items
     {
-        width: 50vw;
+        width: 70%;
         padding: 5px;
+        flex-direction: column;
     }
-
     .about-content p
     {
-        font-size: 1.5vw;
-        margin: auto 0;
-        padding: 0px;
+        text-align: left;
+        font-size: 1.25em;
+    }
+    .images-list a
+    {
+        width: 100%;
+    }
+    .flex-item span
+    {
+        width: 60%;
+        font-size: 2.5vw;
+    }
+    .primary-header
+    {
+        width: 30%
     }
     .primary-header h2
     {
-        font-size: 16px;
+        text-align: right;
+        font-size: 1.5em;
     }
 
     .hero img
@@ -415,12 +440,147 @@ h4
     
     .contact-items ul
     {
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .contact-items ul li a
     {
-        font-size: 16px;
+        font-size: 2.5vw;
+        padding: 25px 20px;
+    }
+
+
+    .border-corners-only::before 
+    {
+        width: calc(100% + 50px + 4px - 120px);
+        height: calc(100% + 10px);
+        top: -4px;
+    }
+
+    .border-corners-only::after 
+    {
+        height: calc(100% + 50px + 5px - 125px);
+        width: calc(100% + 10px);
+        left: -5px;
+    }
+}
+
+/*Media Query for tablets and smaller */
+@media screen and (max-width: 768px)
+{
+    header ul li a
+    {
+        color: var(--tertiary-color);
+    }
+    .border-content, .border-corners-only
+    {
+        font-size: 1.1em;
+        padding: 3px;
+    }
+    .flex-row
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+        margin-left: 100px;
+    }
+    .about-content p
+    {
+        font-size: 1em;
+    }
+    .images-list a
+    {
+        height: 350px;
+    }
+    .flex-item span
+    {
+        width: 70%;
+        font-size: 1.25em;
+    }
+    .primary-header h2
+    {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-bottom: 25px;
+        font-size: 3.5vw;
+        width: 150%;
+    }
+    .contact-items ul li a
+    {
+        font-size: 1em;
+        padding: 25px 20px;
+    }
+}
+
+/*Media Query for mobile phones and smaller */
+@media screen and (max-width: 575px)
+{
+    body
+    {
+        width: 80vw;
+    }
+    header
+    {
+        margin: 5px auto;
+        width: 150%;
+    }
+    header h1
+    {
+        font-size: 1.75em;
+    }
+    header nav ul li a
+    {
+        font-size: 1em;
+        padding: 0px 25px;
+        color: var(--tertiary-color);
+    }
+    #toTopButton
+    {
+        width: 35px;
+        height: 35px;
+        bottom: 20px;
+        left: 20px;
+    }
+
+    #toTopButton img
+    {
+        height: 35px;
+        width: 35px;
+    }
+    .flex-row
+    {
+        width: 100%;
+        margin-left: 25px;
+    }
+    .about-content, .images-list, .contact-items
+    {
+        width: 100%;
+    }
+    .about-content p
+    {
+        font-size: 0.75em;
+    }
+    .flex-item span
+    {
+        width: 75%;
+        font-size: 0.75em;
+    }
+    .primary-header
+    {
+        width: 110%;
+    }
+
+    .primary-header h2
+    {
+        font-size: 1.2em;
+        width: 100%;
+        text-align: left;
+    }
+    .contact-items ul li a
+    {
+        font-size: 0.75em;
+        padding: 10px;
     }
 }

@@ -38,13 +38,13 @@
     <div class="hero">
         <img src="./assets/images/profile-picture.png" onmouseover="onImageHover(this);" onmouseout="onImageUnHover(this);" />
     </div>
-    <div class="flex-parent">
-        <!--About Me Section-->
+
+    <!--About Me Section-->
         <section id="bio" class="about">
-            <div class="primary-header">
+            <div class="flex-column">
                 <h2>C:\bio&#62;</h2>
             </div>
-            <div>
+            <div class="about-content">
                 <p>
                     Andrew Tellitocci is a CERTIFIED FINANCIAL PLANNER turned web developer. He currently works at <a href="https://valeofinancial.com" target="_blank">Valeo Financial Advisors</a>, solving tech problems to help their advisors do more, faster.
                     He graduated Purdue University in 2016 with a Bachelors of Finance. While Finance is a rewarding industry in itself, Andrew found himself drawn back to technology in early 2020
@@ -57,24 +57,12 @@
 
         <!--My Work Section-->
         <section id="my-work" class="work">
-            <div class="primary-header">
+            <div class="flex-column">
                 <h2>C:\my-work&#62;</h2>
             </div>
             <div class="images-list">
                 <div>
-                    <img id="password-gen" src="./assets/images/password-pic.jpg" alt="Example password generator built with JavaScript by Andrew Tellitocci." />
-                </div>
-                <div>
-                    <img id="horiseon" src="#" alt="Horiseon Social Services, Inc. landing page designed by Andrew Tellitocci." />
-                </div>
-                <div>    
-                    <img id="robot-fighting" src="./assets/images/robot-pic.jpg" alt="JavaScript robot fighting game developed by Andrew Tellitocci." />
-                </div>    
-                <div>
-                    <img id="calculator" src="./assets/images/calculator-pic.jpg" alt="Example invoice calculator built with JavaScript by Andrew Tellitocci." />
-                </div>
-                <div>
-                    <img id="run-buddy" src="./assets/images/run-buddy-screenshot.png" alt="Run Buddy, Inc landing page designed by Andrew Tellitocci." />
+                    <img src="assets/images/calculator-pic.jpg" alt="" />
                 </div>
             </div>
 
@@ -82,10 +70,10 @@
         
         <!--Contact Me Section-->
         <section id="contact-me" class="contact-me">
-            <div class="primary-header">
+            <div class="flex-column">
                 <h2>C:\contact-me&#62;</h2>
             </div>
-            <div>
+            <div class="contact-items flex-column">
                 <ul>
                     <li>
                         <a href="tel:513-535-4293">513.535.4293</a>
@@ -102,7 +90,6 @@
                 </ul>
             </div>
         </section>
-    </div>
     <!-- Reference Javascript -->
     <script src="./assets/javascript/javascript.js"></script>
 </body>

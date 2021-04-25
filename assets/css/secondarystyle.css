@@ -1,0 +1,30 @@
+body
+{
+    font-family: 'Major Mono Display', sans-serif;
+}
+
+.border-content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+.oops-flex
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    margin: 10% 25%;
+}
+
+h1
+{
+    font-size: 32px;
+}

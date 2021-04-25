@@ -74,7 +74,7 @@ header nav ul li a
     padding: 40px;
     font-size: 1.5vw;
 }
-/*On hover blink the first character*/
+
 header nav ul li a:hover
 {
     color: var(--tertiary-color);
@@ -107,6 +107,7 @@ header nav ul li a:hover::before
     width: 50px;
 }
 /* Return to top button styling end */
+
 h2
 {
     font-family: 'Major Mono Display', sans-serif;

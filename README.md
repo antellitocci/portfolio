@@ -11,9 +11,10 @@ A portfolio landing page containing links to my projects created primarily for t
 ## Preview
 
 ### Portfolio Page
-[To Do]: Insert Image of deployed app
+<img src="https://raw.githubusercontent.com/antellitocci/portfolio/main/assets/images/portfolio-page-screenshot.png" alt="portfolio page screenshot" width="715" height="994"/>
 
 ### 404-esque Page
+<img src="https://raw.githubusercontent.com/antellitocci/portfolio/main/assets/images/oops-page-screenshot.png" alt="oops page screenshot" width="840" height="467"/>
 
 ## What's Here
 

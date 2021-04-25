@@ -27,6 +27,11 @@ body
     background-attachment: fixed;
 }
 
+body:hover
+{
+    cursor: crosshair;
+}
+
 header
 {
     font-family: 'Major Mono Display', sans-serif;
@@ -99,6 +104,7 @@ h2
     width: 400px;
     margin-bottom: 20px;
     padding: 5px;
+    border-radius: 15px;
 }
 
 .about-content
@@ -137,48 +143,92 @@ h2
     align-content: flex-start;
     justify-content: space-between;
 }
-/*
-.images-list img
-{
-    height: auto;
-    width: 48.7%;
-    margin: 5px;
-    padding: 10px;
-    border: 5px solid var(--secondary-color)
-}
 
-.images-list img:first-child
+.images-list a
 {
-    height: auto;
-    width: 99%;
-}
-*/
-.flex-item
-{
-    width: 49%;
-    margin-bottom: 15px;
     display: flex;
-    background-image: url('../images/calculator-pic.jpg');
+    width: 49%;
+    text-decoration: none;
+    color: var(--tertiary-color);
     background-size: cover;
     background-position: center;
-    padding: 20px 0;
     min-height: 250px;
+    margin-bottom: 15px;
+    border-radius: 5px;
 }
 
-.flex-item:first-of-type
+.flex-item
+{
+    width: 100%;
+    display: flex;
+}
+
+.images-list a:first-of-type
 {
     height: 500px;
     width: 100%;
 }
 
+.images-list a:nth-child(1)
+{
+    background-image: url('../images/calculator-pic-green.jpg');
+}
+
+.images-list a:nth-child(2)
+{
+    background-image: url('../images/password-pic-green.jpg');
+}
+
+.images-list a:nth-child(3)
+{
+    background-image: url('../images/robot-pic-green.jpg');
+}
+
+.images-list a:nth-child(4)
+{
+    background-image: url('../images/horiseon-screenshot-green.png');
+}
+
+.images-list a:nth-child(5)
+{
+    background-image: url('../images/run-buddy-screenshot-green.png');
+}
+
+.images-list a:nth-child(1):hover
+{
+   background-image: url('../images/calculator-pic.jpg');
+   opacity: .75;
+}
+.images-list a:nth-child(2):hover
+{
+   background-image: url('../images/password-pic.jpg');
+   opacity: .75;
+}
+.images-list a:nth-child(3):hover
+{
+   background-image: url('../images/robot-pic.jpg');
+   opacity: .75;
+}
+.images-list a:nth-child(4):hover
+{
+   background-image: url('../images/horiseon-screenshot.png');
+   opacity: .75;
+}
+.images-list a:nth-child(5):hover
+{
+   background-image: url('../images/run-buddy-screenshot.png');
+   opacity: .75;
+}
 .span-bottom-left
 {
     margin-top: auto;
+    margin-bottom: 10px;
     width: 48%;
     background-color: var(--primary-color);
     padding: 10px 20px;
     text-align: left;
     line-height: 1.5;
+    border: 1px solid var(--tertiary-color);
 }
 
 h3
@@ -187,7 +237,7 @@ h3
 }
 h4
 {
-    font-weight: normal;
+    font-family: 'Major Mono Display', sans-serif;
 }
 
 /*Contact Me Section Styling*/

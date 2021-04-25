@@ -1,3 +1,7 @@
+html:hover
+{
+    cursor: crosshair;
+}
 body
 {
     font-family: 'Major Mono Display', sans-serif;
@@ -39,7 +43,12 @@ a
 
 a:hover
 {
-    color: #39ff14;
+    font-family: 'Share Tech Mono', sans-serif;
+    background: white;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 5px 30px;
+    font-weight: 900;
 }
 
 /*Media query for smaller screen sizes*/

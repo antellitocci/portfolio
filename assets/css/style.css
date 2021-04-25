@@ -131,12 +131,13 @@ h2
 .images-list
 {
     width: 65%;
+    display: flex;
     flex-wrap: wrap;
     margin: auto 45px;
-    align-content: center;
-    justify-content: space-around;
+    align-content: flex-start;
+    justify-content: space-between;
 }
-
+/*
 .images-list img
 {
     height: auto;
@@ -150,6 +151,43 @@ h2
 {
     height: auto;
     width: 99%;
+}
+*/
+.flex-item
+{
+    width: 49%;
+    margin-bottom: 15px;
+    display: flex;
+    background-image: url('../images/calculator-pic.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+    min-height: 250px;
+}
+
+.flex-item:first-of-type
+{
+    height: 500px;
+    width: 100%;
+}
+
+.span-bottom-left
+{
+    margin-top: auto;
+    width: 48%;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+h3
+{
+    font-family: 'Major Mono Display', sans-serif;
+}
+h4
+{
+    font-weight: normal;
 }
 
 /*Contact Me Section Styling*/

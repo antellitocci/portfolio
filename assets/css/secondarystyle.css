@@ -3,6 +3,17 @@ body
     font-family: 'Major Mono Display', sans-serif;
 }
 
+.oops-flex
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin: 10% auto;
+}
+
 .border-content
 {
     display: flex;
@@ -10,21 +21,37 @@ body
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: auto;
-}
-
-.oops-flex
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    text-align: center;
-    margin: 10% 25%;
 }
 
 h1
 {
-    font-size: 32px;
+    font-size: 24px;
+}
+
+a
+{
+    margin-top: 25px;
+    text-decoration: none;
+    border-bottom: 1px solid #39ff14;
+    padding-bottom: 5px;
+    color: white;
+}
+
+a:hover
+{
+    color: #39ff14;
+}
+
+/*Media query for smaller screen sizes*/
+@media screen and (max-width: 980px)
+{
+    body
+    {
+        width: 100vw;
+    }
+    .oops-flex, .border-content
+    {
+        width: 80%;
+        margin: 10px auto;
+    }
 }

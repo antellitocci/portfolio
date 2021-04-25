@@ -191,12 +191,14 @@ h4
     border-radius: 5px;
 }
 
+/*Adjust first image of project list to be larger than rest*/
 .images-list a:first-of-type
 {
     height: 500px;
     width: 100%;
 }
 
+/*Set images for project links*/
 .images-list a:nth-child(1)
 {
     background-image: url('../images/calculator-pic-green.jpg');
@@ -222,31 +224,37 @@ h4
     background-image: url('../images/run-buddy-screenshot-green.png');
 }
 
+/* Change project link images on Hover*/
 .images-list a:nth-child(1):hover
 {
    background-image: url('../images/calculator-pic.jpg');
    opacity: .75;
 }
+
 .images-list a:nth-child(2):hover
 {
    background-image: url('../images/password-pic.jpg');
    opacity: .75;
 }
+
 .images-list a:nth-child(3):hover
 {
    background-image: url('../images/robot-pic.jpg');
    opacity: .75;
 }
+
 .images-list a:nth-child(4):hover
 {
    background-image: url('../images/horiseon-screenshot.png');
    opacity: .75;
 }
+
 .images-list a:nth-child(5):hover
 {
    background-image: url('../images/run-buddy-screenshot.png');
    opacity: .75;
 }
+
 .span-bottom-left
 {
     margin-top: auto;
@@ -278,16 +286,14 @@ h4
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-left: 15px;
+    justify-content: space-around;
     list-style: none;
     width: 100%;
-
 }
 
 .contact-items ul li a
 {
-    padding: 30px 30px;
+    padding: 25px 30px;
     font-size: 24px;
     color: var(--tertiary-color);
     text-decoration: underline var(--secondary-color);
@@ -315,6 +321,8 @@ h4
 {
     width: 20%;
 }
+/*Create border on only four corners*/
+/*Link to source: https://codepad.co/snippet/only-corner-border-for-an-element*/
 .border-corners-only {
     border: 2px solid var(--secondary-color);
     display: flex;
@@ -332,14 +340,16 @@ h4
     padding: 0;
     z-index: 5;
 }
-.border-corners-only::before,
-.border-corners-only::after {
+
+.border-corners-only::before, .border-corners-only::after 
+{
   content: '';
   position: absolute;
   background: rgba(0,0,0,1);
 }
 
-.border-corners-only::before {
+.border-corners-only::before 
+{
   width: calc(100% + 50px + 4px - 120px);
   height: calc(100% + 4px);
   top: -2px;
@@ -348,7 +358,8 @@ h4
   z-index: 1;
 }
 
-.border-corners-only::after {
+.border-corners-only::after 
+{
   height: calc(100% + 50px + 4px - 120px);
   width: calc(100% + 4px);
   left: -2px;
@@ -385,6 +396,7 @@ h4
         padding: 0px 25px;
         color: var(--tertiary-color);
     }
+
     #toTopButton
     {
         width: 50px;
@@ -398,10 +410,12 @@ h4
         height: 50px;
         width: 50px;
     }
+
     .border-content, .border-corners-only
     {
         width: 100%;
     }
+    /*about section style edits*/
     .about-content, .images-list, .contact-items
     {
         width: 70%;
@@ -413,31 +427,19 @@ h4
         text-align: left;
         font-size: 1.25em;
     }
-    .images-list a
-    {
-        width: 100%;
-    }
-    .flex-item span
-    {
-        width: 60%;
-        font-size: 2.5vw;
-    }
-    .primary-header
-    {
-        width: 30%
-    }
-    .primary-header h2
-    {
-        text-align: right;
-        font-size: 1.5em;
-    }
-
     .hero img
     {
         height: auto;
         width: 100%;
     }
-    
+
+    /* work section style edits*/
+    .images-list a
+    {
+        width: 100%;
+    }
+
+    /* contact section style edits */
     .contact-items ul
     {
         justify-content: flex-start;
@@ -450,7 +452,25 @@ h4
         padding: 25px 20px;
     }
 
+    /*Utility style edits */
+    .flex-item span
+    {
+        width: 60%;
+        font-size: 2.5vw;
+    }
 
+    .primary-header
+    {
+        width: 30%
+    }
+
+    .primary-header h2
+    {
+        text-align: right;
+        font-size: 1.5em;
+    }
+
+    /*corner only border style edits*/
     .border-corners-only::before 
     {
         width: calc(100% + 50px + 4px - 120px);
@@ -464,6 +484,7 @@ h4
         width: calc(100% + 10px);
         left: -5px;
     }
+
 }
 
 /*Media Query for tablets and smaller */
@@ -473,11 +494,23 @@ h4
     {
         color: var(--tertiary-color);
     }
-    .border-content, .border-corners-only
+
+    .about-content p
     {
-        font-size: 1.1em;
-        padding: 3px;
+        font-size: 1em;
     }
+
+    .images-list a
+    {
+        height: 350px;
+    }
+
+    .contact-items ul li a
+    {
+        font-size: 1em;
+        padding: 25px 20px;
+    }
+
     .flex-row
     {
         flex-direction: column;
@@ -485,19 +518,19 @@ h4
         width: 90%;
         margin-left: 100px;
     }
-    .about-content p
-    {
-        font-size: 1em;
-    }
-    .images-list a
-    {
-        height: 350px;
-    }
+
     .flex-item span
     {
         width: 70%;
         font-size: 1.25em;
     }
+
+    .border-content, .border-corners-only
+    {
+        font-size: 1.1em;
+        padding: 3px;
+    }
+
     .primary-header h2
     {
         display: flex;
@@ -506,11 +539,6 @@ h4
         margin-bottom: 25px;
         font-size: 3.5vw;
         width: 150%;
-    }
-    .contact-items ul li a
-    {
-        font-size: 1em;
-        padding: 25px 20px;
     }
 }
 
@@ -521,21 +549,25 @@ h4
     {
         width: 80vw;
     }
+
     header
     {
         margin: 5px auto;
-        width: 150%;
+        width: 125%;
     }
+
     header h1
     {
         font-size: 1.75em;
     }
+
     header nav ul li a
     {
         font-size: 1em;
         padding: 0px 25px;
         color: var(--tertiary-color);
     }
+
     #toTopButton
     {
         width: 35px;
@@ -549,24 +581,35 @@ h4
         height: 35px;
         width: 35px;
     }
+
+    .about-content, .images-list, .contact-items
+    {
+        width: 100%;
+    }
+    
+    .about-content p
+    {
+        font-size: 0.75em;
+    }
+
+    .contact-items ul li a
+    {
+        font-size: 0.75em;
+        padding: 10px;
+    }
+
     .flex-row
     {
         width: 100%;
         margin-left: 25px;
     }
-    .about-content, .images-list, .contact-items
-    {
-        width: 100%;
-    }
-    .about-content p
-    {
-        font-size: 0.75em;
-    }
+
     .flex-item span
     {
         width: 75%;
         font-size: 0.75em;
     }
+
     .primary-header
     {
         width: 110%;
@@ -577,10 +620,5 @@ h4
         font-size: 1.2em;
         width: 100%;
         text-align: left;
-    }
-    .contact-items ul li a
-    {
-        font-size: 0.75em;
-        padding: 10px;
     }
 }

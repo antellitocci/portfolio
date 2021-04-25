@@ -74,7 +74,6 @@ header nav ul li a
 header nav ul li a:hover
 {
     color: var(--tertiary-color);
-    border-radius: 15px;
     text-shadow: none;
 }
 
@@ -87,9 +86,11 @@ h2
 {
     font-family: 'Major Mono Display', sans-serif;
     font-weight: 500;
-    text-align: right;
+    text-align: left;
     color: var(--secondary-color);
     text-shadow: 0 0 7.5px rgba(256, 256, 256, 0.55);
+    display: inline-block;
+    width: 100%;
 }
 
 .hero
@@ -100,22 +101,22 @@ h2
 
 .about
 {
-    line-height: 1.5;
-    width: 90%;
-    margin: 0 auto;
-    text-align: justify;
-    align-content: right;
+    display: flex;
+    flex-basis: 80%;
+    margin: 25px auto;
 }
 
 .about p
 {
-    margin: 5px 20px;
+    margin: auto 15px;
+    text-align: justify;
+    line-height: 1.5;
 }
 
 .about a
 {
     color: var(--tertiary-color);
-    border: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
     padding: 2px;
     text-decoration: none;
 }
@@ -125,14 +126,55 @@ h2
     color: var(--secondary-color);
 }
 
-/*Contact Me Section Styling (<footer>)*/
-footer
-{
-
-}
-
-/* Utility Styles */
-.flex-row
+/*Projects Section Styling*/
+.work
 {
     display: flex;
+    flex-basis: 90%;
+    margin: 25px auto;
+}
+
+.images-list
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+
+.images-list img
+{
+    height: auto;
+    width: 350px;
+}
+/*Contact Me Section Styling*/
+.contact-me
+{
+    display: flex;
+    flex-basis: 99%;
+}
+.contact-me ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+    list-style: none;
+
+}
+.contact-me ul li a
+{
+    padding: 40px;
+    font-size: 1.5vw;
+    color: var(--secondary-color);
+}
+/* Utility Styles */
+.flex-parent
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.primary-header
+{
+    width: 30%;
 }

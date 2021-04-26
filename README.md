@@ -24,6 +24,11 @@ A portfolio landing page containing links to my projects created primarily for t
 * Use of Media Queries to resize pages according to viewport size.
 * Use of advanced CSS to create interesting page styles.
 
+## Future Plans
+
+* Continue to add to project list.
+* Refactor media query to replace contact links with icons as screen size shrinks.
+
 ## Access the Project
 
 - Github repository avaialable [here](https://github.com/antellitocci/portfolio)

@@ -204,12 +204,12 @@ h4
 /*Set images for project links*/
 .images-list a:nth-child(1)
 {
-    background-image: url('../images/ca-main-screenshot-green.png');
+    background-image: url('../images/bb-main-green.png');
 }
 
 .images-list a:nth-child(2)
 {
-    background-image: url('../images/password-pic-green.jpg');
+    background-image: url('../images/ca-main-screenshot-green.png');
 }
 
 .images-list a:nth-child(3)
@@ -219,7 +219,7 @@ h4
 
 .images-list a:nth-child(4)
 {
-    background-image: url('../images/horiseon-screenshot-green.png');
+    background-image: url('../images/password-pic-green.jpg');
 }
 
 .images-list a:nth-child(5)
@@ -230,13 +230,13 @@ h4
 /* Change project link images on Hover*/
 .images-list a:nth-child(1):hover
 {
-   background-image: url('../images/ca-main-screenshot.png');
+   background-image: url('../images/butler-bites-category.png');
    opacity: .75;
 }
 
 .images-list a:nth-child(2):hover
 {
-   background-image: url('../images/password-pic.jpg');
+   background-image: url('../images/ca-main-screenshot.png');
    opacity: .75;
 }
 
@@ -248,7 +248,7 @@ h4
 
 .images-list a:nth-child(4):hover
 {
-   background-image: url('../images/horiseon-screenshot.png');
+   background-image: url('../images/password-pic.jpg');
    opacity: .75;
 }
 
